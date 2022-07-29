@@ -1438,6 +1438,48 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Persistence/AZT507/AZT507/" class="md-nav__link">
+        AZT507 - External Entity Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Persistence/AZT507/AZT507-1/" class="md-nav__link">
+        AZT507.1 - Azure Lighthouse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Persistence/AZT507/AZT507-2/" class="md-nav__link">
+        AZT507.2 - Microsoft Partners
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1989,13 +2031,10 @@
 </div>
 <div class="admonition example">
 <p class="admonition-title">Examples</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">PowerShell</label><label for="__tabbed_1_2">Nimburst</label><label for="__tabbed_1_3">Azure Portal</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">PowerShell</label><label for="__tabbed_1_2">Azure Portal</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/how-to-use-vm-token"><code class="highlight"><span class="n">powershell</span><span class="p">.</span><span class="n">exe</span> <span class="n">-c</span> <span class="nv">$a</span><span class="p">=</span><span class="nb">Invoke-Restmethod</span> <span class="n">-Uri</span> <span class="s1">&#39;http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&quot;&amp;&quot;resource=https://management.azure.com/&#39;</span> <span class="n">-Method</span> <span class="n">GET</span> <span class="n">-Headers</span> <span class="p">@{</span><span class="n">Metadata</span><span class="p">=</span><span class="s1">&#39;true&#39;</span><span class="p">}</span> <span class="n">-UseBasicParsing</span><span class="p">;</span><span class="nv">$a</span><span class="p">.</span><span class="n">access_token</span></code></a></p>
-</div>
-<div class="tabbed-block">
-<p><code class="highlight"><span class="nb">Get-AzureManagedIdentityJWT</span></code></p>
 </div>
 <div class="tabbed-block">
 <p><img alt="vmimds" src="../vmimds.PNG" /></p>
