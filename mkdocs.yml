@@ -1,0 +1,154 @@
+site_name: 'Azure Threat Research Matrix'
+nav:
+    - Home: 'index.md'
+    - Tactics:
+        - Reconnaissance:
+            - Reconnaissance: Reconnaissance/Reconnaissance.md
+            - Techniques:
+                - AZT101 - Port Mapping: Reconnaissance/AZT101/AZT101.md
+                - AZT102 - IP Discovery: Reconnaissance/AZT102/AZT102.md
+                - AZT103 - Public Accessible Resource: Reconnaissance/AZT103/AZT103.md
+                - AZT104 - Gather User Information: Reconnaissance/AZT104/AZT104.md
+                - AZT105 - Gather Application Information: Reconnaissance/AZT105/AZT105.md
+                - AZT106 - Gather Role Information: Reconnaissance/AZT106/AZT106.md
+                - AZT106.1 - Gather AAD Role Information: Reconnaissance/AZT106/AZT106-1.md
+                - AZT106.2 - Gather Application Role Information: Reconnaissance/AZT106/AZT106-2.md
+                - AZT106.3 - Gather Azure Resources Role Assignments: Reconnaissance/AZT106/AZT106-3.md
+                - AZT107 - Gather Resource Data: Reconnaissance/AZT107/AZT107.md
+                - AZT108 - Gather Victim Data: Reconnaissance/AZT108/AZT108.md
+        - Initial Access:
+            - Initial Access: InitialAccess/InitialAccess.md
+            - Techniques:
+                - AZT201 - Valid Credentials: InitialAccess/AZT201/AZT201.md
+                - AZT201.1 - User Account: InitialAccess/AZT201/AZT201-1.md
+                - AZT201.2 - Service Principal: InitialAccess/AZT201/AZT201-2.md
+                - AZT202 - Password Spraying: InitialAccess/AZT202/AZT202.md
+        - Execution:
+            - Execution: Execution/Execution.md
+            - Techniques:
+                - AZT301 - Virtual Machine Scripting: Execution/AZT301/AZT301.md
+                - AZT301.1 - RunCommand: Execution/AZT301/AZT301-1.md
+                - AZT301.2 - CustomScriptExtension: Execution/AZT301/AZT301-2.md
+                - AZT301.3 - Desired State Configuration: Execution/AZT301/AZT301-3.md
+                - AZT301.4 - Compute Gallery Application: Execution/AZT301/AZT301-4.md
+                - AZT301.5 - AKS Command Invoke: Execution/AZT301/AZT301-5.md
+                - AZT301.6 - Vmss Run Command: Execution/AZT301/AZT301-6.md     
+                - AZT301.7 - Serial Console: Execution/AZT301/AZT301-7.md             
+                - AZT302 - Serverless Scripting: Execution/AZT302/AZT302.md
+                - AZT302.1 - Automation Account Runbook Hybrid Worker Group: Execution/AZT302/AZT302-1.md
+                - AZT302.2 - Automation Account Runbook RunAs Account: Execution/AZT302/AZT302-2.md
+                - AZT302.3 - Automation Account Runbook Managed Identity: Execution/AZT302/AZT302-3.md               
+                - AZT302.4 - Function Application: Execution/AZT302/AZT302-4.md
+                - AZT303 - Managed Device Scripting: Execution/AZT303/AZT303.md
+        - 'Privilege Escalation':
+            - 'Privilege Escalation': PrivilegeEscalation/PrivEsc.md
+            - Techniques:
+                - AZT201 - Valid Credentials: InitialAccess/AZT201/AZT201.md
+                - AZT401 - Privileged Identity Management Role: PrivilegeEscalation/AZT401/AZT401.md
+                - AZT402 - Elevated Access Toggle: PrivilegeEscalation/AZT402/AZT402.md
+                - AZT403 - Local Resource Hijack: PrivilegeEscalation/AZT403/AZT403-1.md
+                - AZT404 - Principal Impersonation: PrivilegeEscalation/AZT404/AZT404.md
+                - AZT404.1 - Function Application: PrivilegeEscalation/AZT404/AZT404-1.md
+                - AZT404.2 - Logic Application: PrivilegeEscalation/AZT404/AZT404-2.md
+                - AZT404.3 - Automation Account: PrivilegeEscalation/AZT404/AZT404-3.md
+                - AZT404.4 - App Service: PrivilegeEscalation/AZT404/AZT404-4.md
+                - AZT405 - Azure AD Application: PrivilegeEscalation/AZT405/AZT405.md
+                - AZT405.1 - Application API Permissions: PrivilegeEscalation/AZT405/AZT405-1.md
+                - AZT405.2 - Application Role: PrivilegeEscalation/AZT405/AZT405-2.md
+                - AZT405.3 - Application Registration Owner: PrivilegeEscalation/AZT405/AZT405-3.md
+        - Persistence:
+            - Persistence: Persistence/Persistence.md
+            - Techniques:
+                - AZT201 - Valid Credentials: InitialAccess/AZT201/AZT201.md
+                - AZT501 - Account Manipulation: Persistence/AZT501/AZT501.md
+                - AZT501.1 - User Account Manipulation: Persistence/AZT501/AZT501-1.md
+                - AZT501.2 - Service Principal Manipulation: Persistence/AZT501/AZT501-2.md
+                - AZT501.3 - Azure VM Local Administrator Manipulation: Persistence/AZT501/AZT501-3.md
+                - AZT502 - Account Creation: Persistence/AZT502/AZT502.md
+                - AZT502.1 - User Account Creation: Persistence/AZT502/AZT502-1.md
+                - AZT502.2 - Service Principal Creation: Persistence/AZT502/AZT502-2.md
+                - AZT502.3 - Guest Account Creation: Persistence/AZT502/AZT502-3.md
+                - AZT503 - HTTP Trigger: Persistence/AZT503/AZT503.md
+                - AZT503.1 - Logic Application HTTP Trigger: Persistence/AZT503/AZT503-1.md
+                - AZT503.2 - Function App HTTP Trigger: Persistence/AZT503/AZT503-2.md
+                - AZT503.3 - Runbook Webhook: Persistence/AZT503/AZT503-3.md
+                - AZT503.4 - WebJob: Persistence/AZT503/AZT503-4.md
+                - AZT504 - Watcher Tasks: Persistence/AZT504/AZT504.md
+                - AZT505 - Scheduled Jobs: Persistence/AZT505/AZT505-1.md
+                - AZT506 - Network Security Group Modification: Persistence/AZT506/AZT506.md
+                - AZT507 - External Entity Access: Persistence/AZT507/AZT507.md     
+                - AZT507.1 - Azure Lighthouse: Persistence/AZT507/AZT507-1.md
+                - AZT507.2 - Microsoft Partners: Persistence/AZT507/AZT507-2.md                               
+        - 'Credential Access':
+            - 'Credential Access': CredentialAccess/CredentialAccess.md
+            - Techniques:
+                - AZT601 - Steal Managed Identity JsonWebToken: CredentialAccess/AZT601/AZT601.md
+                - AZT601.1 - Virtual Machine IMDS Request: CredentialAccess/AZT601/AZT601-1.md
+                - AZT601.2 - Azure Kubernetes Service IMDS Request: CredentialAccess/AZT601/AZT601-2.md
+                - AZT601.3 - Logic Application JWT PUT Request: CredentialAccess/AZT601/AZT601-3.md
+                - AZT601.4 - Function Application JWT GET Request: CredentialAccess/AZT601/AZT601-4.md
+                - AZT601.5 - Automation Account Runbook: CredentialAccess/AZT601/AZT601-5.md
+                - AZT602 - Steal Service Principal Certificate: CredentialAccess/AZT602/AZT602-1.md
+                - AZT603 - Service Principal Secret Reveal: CredentialAccess/AZT603/AZT603-1.md
+                - AZT604 - Azure KeyVault Dumping: CredentialAccess/AZT604/AZT604.md
+                - AZT604.1 - Azure KeyVault Secret Dump: CredentialAccess/AZT604/AZT604-1.md
+                - AZT604.2 - Azure KeyVault Certificate Dump: CredentialAccess/AZT604/AZT604-2.md
+                - AZT604.3 - Azure KeyVault Key Dump: CredentialAccess/AZT604/AZT604-3.md
+                - AZT605 - Resource Secret Reveal: CredentialAccess/AZT605/AZT605.md
+                - AZT605.1 - Storage Account Access Key Dumping: CredentialAccess/AZT605/AZT605-1.md
+                - AZT605.2 - Automation Account Credential Secret Dump: CredentialAccess/AZT605/AZT605-2.md
+        - Exfiltration:
+            - Exfiltration: Exfiltration/Exfiltration.md
+            - Techniques:
+                - AZT701 - SAS URI Generation: Exfiltration/AZT701/AZT701.md
+                - AZT701.1 - VM Disk SAS URI: Exfiltration/AZT701/AZT701-1.md
+                - AZT701.2 - Storage Account File Share SAS: Exfiltration/AZT701/AZT701-2.md
+                - AZT702 - File Share Mounting: Exfiltration/AZT702/AZT702-1.md
+                - AZT703 - Replication: Exfiltration/AZT703/AZT703-1.md
+    - Acknowledgments: acknowledgments.md
+    - About: about.md
+theme:
+  home: home.md 
+  name: material
+  logo: logoW.png    
+  include_search_page: false
+  search_index_only: true
+  language: en
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: black
+      accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      guess_lang: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: '#'
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg            
+extra_css:
+#  - stylesheets/extra.css
+plugins:
+  - search
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/haus3c
