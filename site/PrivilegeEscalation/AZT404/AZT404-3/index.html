@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#azt4043-unmanaged-scripting-function-application" class="md-skip">
+        <a href="#azt4043-unmanaged-scripting-automation-account-runbook" class="md-skip">
           Skip to content
         </a>
       
@@ -2062,8 +2062,8 @@
                 
 
 
-<h1 id="azt4043-unmanaged-scripting-function-application">AZT404.3 - Unmanaged Scripting: Function Application<a class="headerlink" href="#azt4043-unmanaged-scripting-function-application" title="Permanent link">#</a></h1>
-<p>By utilizing a Function Application, an attacker can execute Azure operations on a given resource.</p>
+<h1 id="azt4043-unmanaged-scripting-automation-account-runbook">AZT404.3 - Unmanaged Scripting: Automation Account Runbook<a class="headerlink" href="#azt4043-unmanaged-scripting-automation-account-runbook" title="Permanent link">#</a></h1>
+<p>By utilizing a Automation Account configured with a managed identity or RunAs account, an attacker can execute Azure operations on a given resource.</p>
 <div class="admonition info">
 <p class="admonition-title">Resource</p>
 <p>Automation Account</p>
@@ -2071,9 +2071,7 @@
 <div class="admonition success">
 <p class="admonition-title">Actions</p>
 <ul>
-<li>Microsoft.Web/sites/hostruntime/vfs/run.csx/write</li>
-<li>Microsoft.Web/sites/functions/write</li>
-<li>Microsoft.Web/sites/write</li>
+<li>Microsoft.Automation/automationAccounts/runbooks/*    </li>
 </ul>
 </div>
 <div class="admonition example">
@@ -2081,16 +2079,16 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Az PowerShell</label><label for="__tabbed_1_2">Azure CLI</label><label for="__tabbed_1_3">Azure REST API</label><label for="__tabbed_1_4">Azure Portal</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p><a href="https://docs.microsoft.com/en-us/powershell/module/az.functions/update-azfunctionapp?view=azps-8.0.0"><code class="highlight"><span class="nb">Update-AzFunctionApp</span></code></a></p>
+<p><a href="https://docs.microsoft.com/en-us/powershell/module/az.automation/new-azautomationrunbook?view=azps-8.2.0"><code class="highlight"><span class="nb">New-AzAutomationRunbook</span></code></a></p>
 </div>
 <div class="tabbed-block">
-<p><a href="https://docs.microsoft.com/en-us/cli/azure/functionapp?view=azure-cli-latest#az-functionapp-update"><code class="highlight"><span class="n">az</span> <span class="n">functionapp</span> <span class="n">update</span></code></a></p>
+<p><a href="https://docs.microsoft.com/en-us/cli/azure/automation/runbook?view=azure-cli-latest"><code class="highlight"><span class="n">az</span> <span class="n">automation</span> <span class="n">runbook</span></code></a></p>
 </div>
 <div class="tabbed-block">
-<p><a href="https://docs.microsoft.com/en-us/rest/api/appservice/web-apps/list-functions"><code class="highlight"><span class="n">GET</span> <span class="n">https</span><span class="p">://</span><span class="n">management</span><span class="p">.</span><span class="n">azure</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">subscriptions</span><span class="p">/{</span><span class="n">subscriptionId</span><span class="p">}/</span><span class="n">resourceGroups</span><span class="p">/{</span><span class="n">resourceGroupName</span><span class="p">}/</span><span class="n">providers</span><span class="p">/</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">Web</span><span class="p">/</span><span class="n">sites</span><span class="p">/{</span><span class="n">name</span><span class="p">}/</span><span class="n">functions</span><span class="k">?</span><span class="n">api-version</span><span class="p">=</span><span class="n">2021</span><span class="p">-</span><span class="n">02</span><span class="p">-</span><span class="n">01</span></code></a></p>
+<p><a href="https://docs.microsoft.com/en-us/rest/api/automation/runbook/create-or-update?tabs=HTTP"><code class="highlight"><span class="n">PUT</span> <span class="n">https</span><span class="p">://</span><span class="n">management</span><span class="p">.</span><span class="n">azure</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">subscriptions</span><span class="p">/{</span><span class="n">subscriptionId</span><span class="p">}/</span><span class="n">resourceGroups</span><span class="p">/{</span><span class="n">resourceGroupName</span><span class="p">}/</span><span class="n">providers</span><span class="p">/</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">Automation</span><span class="p">/</span><span class="n">automationAccounts</span><span class="p">/{</span><span class="n">automationAccountName</span><span class="p">}/</span><span class="n">runbooks</span><span class="p">/{</span><span class="n">runbookName</span><span class="p">}</span><span class="k">?</span><span class="n">api-version</span><span class="p">=</span><span class="n">2019</span><span class="p">-</span><span class="n">06</span><span class="p">-</span><span class="n">01</span></code></a></p>
 </div>
 <div class="tabbed-block">
-<p><img alt="functionapp" src="functionapp.PNG" /></p>
+<p><img alt="runbook" src="../runbook.PNG" /></p>
 </div>
 </div>
 </div>
@@ -2110,20 +2108,26 @@
 <tbody>
 <tr>
 <td>Resource</td>
-<td>Write Run.csx</td>
-<td>Microsoft.Web/sites/hostruntime/vfs/run.csx/write</td>
+<td>Create an Azure Automation job</td>
+<td>Microsoft.Automation/automationAccounts/jobs/write</td>
 <td>Azure Activity Log</td>
 </tr>
 <tr>
 <td>Resource</td>
-<td>Update Web Apps Functions</td>
-<td>Microsoft.Web/sites/functions/write</td>
+<td>Publish an Azure Automation runbook draft</td>
+<td>Microsoft.Automation/automationAccounts/runbooks/publish/action</td>
 <td>Azure Activity Log</td>
 </tr>
 <tr>
 <td>Resource</td>
-<td>Update website</td>
-<td>Microsoft.Web/sites/write</td>
+<td>Write an Azure Automation runbook draft</td>
+<td>Microsoft.Automation/automationAccounts/runbooks/draft/write</td>
+<td>Azure Activity Log</td>
+</tr>
+<tr>
+<td>Resource</td>
+<td>Create or Update an Azure Automation Runbook</td>
+<td>Microsoft.Automation/automationAccounts/runbooks/write</td>
 <td>Azure Activity Log</td>
 </tr>
 </tbody>
@@ -2131,7 +2135,7 @@
 </div>
 <div class="admonition faq">
 <p class="admonition-title">Additional Resources</p>
-<p><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-powershell">https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-powershell</a></p>
+<p><a href="https://docs.microsoft.com/en-us/azure/automation/automation-runbook-execution">https://docs.microsoft.com/en-us/azure/automation/automation-runbook-execution</a></p>
 </div>
 
               
