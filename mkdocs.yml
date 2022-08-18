@@ -78,7 +78,10 @@ nav:
                 - AZT506 - Network Security Group Modification: Persistence/AZT506/AZT506.md
                 - AZT507 - External Entity Access: Persistence/AZT507/AZT507.md     
                 - AZT507.1 - Azure Lighthouse: Persistence/AZT507/AZT507-1.md
-                - AZT507.2 - Microsoft Partners: Persistence/AZT507/AZT507-2.md                               
+                - AZT507.2 - Microsoft Partners: Persistence/AZT507/AZT507-2.md 
+                - AZT507.3 - Subscription Hijack: Persistence/AZT507/AZT507-3.md              
+                - AZT507.4 - Domain Trust Modification: Persistence/AZT507/AZT507-4.md     
+                - AZT508 - Azure Policy: Persistence/AZT508/AZT508.md                                        
         - 'Credential Access':
             - 'Credential Access': CredentialAccess/CredentialAccess.md
             - Techniques:
@@ -97,6 +100,7 @@ nav:
                 - AZT605 - Resource Secret Reveal: CredentialAccess/AZT605/AZT605.md
                 - AZT605.1 - Storage Account Access Key Dumping: CredentialAccess/AZT605/AZT605-1.md
                 - AZT605.2 - Automation Account Credential Secret Dump: CredentialAccess/AZT605/AZT605-2.md
+                - AZT605.3 - Resource Group Deployment History Secret Dump: CredentialAccess/AZT605/AZT605-3.md
         - Exfiltration:
             - Exfiltration: Exfiltration/Exfiltration.md
             - Techniques:
@@ -105,6 +109,10 @@ nav:
                 - AZT701.2 - Storage Account File Share SAS: Exfiltration/AZT701/AZT701-2.md
                 - AZT702 - File Share Mounting: Exfiltration/AZT702/AZT702-1.md
                 - AZT703 - Replication: Exfiltration/AZT703/AZT703-1.md
+                - AZT704 - Soft-Delete Recovery: Exfiltration/AZT704/AZT704.md
+                - AZT704.1 - Key Vault: Exfiltration/AZT704/AZT704-1.md   
+                - AZT704.2 - Storage Account Object: Exfiltration/AZT704/AZT704-2.md   
+                - AZT704.3 - Recovery Services Vault: Exfiltration/AZT704/AZT704-3.md            
     - Acknowledgments: acknowledgments.md
     - About: about.md
 theme:
