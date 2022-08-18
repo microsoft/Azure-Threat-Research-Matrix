@@ -23,6 +23,7 @@ nav:
                 - AZT201.1 - User Account: InitialAccess/AZT201/AZT201-1.md
                 - AZT201.2 - Service Principal: InitialAccess/AZT201/AZT201-2.md
                 - AZT202 - Password Spraying: InitialAccess/AZT202/AZT202.md
+                - AZT203 - Malicious Application Consent: InitialAccess/AZT203/AZT203.md
         - Execution:
             - Execution: Execution/Execution.md
             - Techniques:
