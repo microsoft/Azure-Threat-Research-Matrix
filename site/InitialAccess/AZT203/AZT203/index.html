@@ -639,6 +639,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#detection-details" class="md-nav__link">
+    Detection Details
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2188,6 +2195,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#detection-details" class="md-nav__link">
+    Detection Details
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2210,27 +2224,11 @@
 </div>
 <div class="admonition success">
 <p class="admonition-title">Actions</p>
-<ul>
-<li>
-<p>N/A</p>
-</li>
-<li>
 <p>Any user can consent to an application which will impersonate that user's privileges.</p>
-</li>
-</ul>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Examples</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Az PowerShell (Secret)</label><label for="__tabbed_1_2">Azure CLI</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><a href="https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-8.0.0"><code class="highlight"><span class="nb">Connect-AzAccount</span></code></a></p>
-</div>
-<div class="tabbed-block">
-<p><a href="https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli"><code class="highlight"><span class="n">az</span> <span class="n">login</span> <span class="n">-u</span> <span class="p">&lt;</span><span class="n">username</span><span class="p">&gt;</span> <span class="n">-p</span> <span class="p">&lt;</span><span class="n">password</span><span class="p">&gt;</span></code></a></p>
-</div>
-</div>
-</div>
+<p>N/A</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Detections</p>
@@ -2254,15 +2252,16 @@
 </tbody>
 </table>
 <h2 id="queries"><strong> Queries</strong><a class="headerlink" href="#queries" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code>```=== &quot;Log Analytics&quot;
-    AuditLogs
-</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Log Analytics</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><code class="highlight">AuditLogs| where ActivityDisplayName == &quot;Consent to application&quot;</code></p>
 </div>
-<p>| where ActivityDisplayName == "Consent to application"```</p>
-<div class="highlight"><pre><span></span><code>## **Detection Details**
-
-Please review the incident response playbooks in the &#39;Additional Resources&#39; section below.
-</code></pre></div>
+</div>
+</div>
+<h2 id="detection-details"><strong>Detection Details</strong><a class="headerlink" href="#detection-details" title="Permanent link">#</a></h2>
+<p>Please review the incident response playbooks in the 'Additional Resources' section below.</p>
+</div>
 <div class="admonition faq">
 <p class="admonition-title">Additional Resources</p>
 <ul>

@@ -6,5 +6,8 @@ The Azure Threat Research Matrix is a collaborative effort with Microsoft and th
 * Roberto Rodriguez [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/Cyb3rWard0g) [:fontawesome-brands-github:{ .github }](https://github.com/Cyb3rWard0g) 
 * Manuel Berrueta [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/ManuelBerrueta)
 * Jonny Johnson [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/jsecurity101) [:fontawesome-brands-github:{ .github }](https://github.com/jsecurity101)  
-
+* Dor Edry [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/edrydor) [:fontawesome-brands-github:{ .github }](https://github.com/doredry)
+* Ram Pliskin 
+* Nikhil Mittal [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/nikhil_mitt) 
 * [MITRE ATT&CK](https://attack.mitre.org/resources/terms-of-use/) - © 2021 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+

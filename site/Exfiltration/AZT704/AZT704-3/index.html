@@ -2208,9 +2208,8 @@
 <p><a href="https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion?view=azps-8.2.0"><code class="highlight"><span class="nb">Undo-AzRecoveryServicesBackupItemDeletion</span></code></a></p>
 </div>
 <div class="tabbed-block">
-<ul>
-<li>Please review the REST API method <a href="https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion?view=azps-8.2.0">here</a> to see the request body.</li>
-</ul>
+<p><a href="https://docs.microsoft.com/en-us/powershell/module/az.recoveryservices/undo-azrecoveryservicesbackupitemdeletion?view=azps-8.2.0"><code class="highlight"><span class="nb">Invoke-RESTMethod</span> <span class="n">-body</span> <span class="nv">$body</span> <span class="n">-Method</span> <span class="n">PUT</span> <span class="n">-Uri</span> <span class="s1">&#39;https://management.azure.com/Subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testVaultRG/providers/Microsoft.RecoveryServices/vaults/testVault/backupFabrics/Azure/protectionContainers/iaasvmcontainer;iaasvmcontainerv2;testRG;testVM/protectedItems/vm;iaasvmcontainerv2;testRG;testVM?api-version=2019-05-13&#39;</span></code></a></p>
+<p><code class="highlight"><span class="nv">$Body</span> <span class="p">=</span><span class="p">{</span><span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;protectedItemType&quot;</span><span class="p">:</span> <span class="s2">&quot;Microsoft.Compute/virtualMachines&quot;</span><span class="p">,</span><span class="s2">&quot;protectionState&quot;</span><span class="p">:</span> <span class="s2">&quot;ProtectionStopped&quot;</span><span class="p">,</span><span class="s2">&quot;sourceResourceId&quot;</span><span class="p">:</span> <span class="s2">&quot;/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM&quot;</span><span class="p">,</span><span class="s2">&quot;isRehydrate&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">}</span><span class="p">}</span></code> </p>
 </div>
 <div class="tabbed-block">
 <p><img alt="portal" src="https://docs.microsoft.com/en-us/azure/backup/media/backup-azure-security-feature-cloud/undelete-vm.png" /></p>
