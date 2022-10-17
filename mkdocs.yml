@@ -159,5 +159,7 @@ plugins:
   - search
 extra:
   social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/microsoft/Azure-Threat-Research-Matrix
     - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/haus3c
+      link: https://twitter.com/haus3c  
