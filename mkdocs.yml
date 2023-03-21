@@ -154,7 +154,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg            
 extra_css:
-#  - stylesheets/extra.css
+  - stylesheets/main.1c3799f8.min.css
 plugins:
   - search
 extra:
