@@ -25,6 +25,9 @@
 !!! attention "Disclaimer"
 	The purpose of the Azure Threat Research Matrix (ATRM) is to educate readers on the potential of Azure-based tactics, techniques, and procedures (TTPs). It is not to teach how to weaponize or specifically abuse them. For this reason, some specific commands will be obfuscated or parts will be omitted to prevent abuse.  
 
+!!! note "New Technique Proposal"
+	Have an idea for a new technique? Fill out the [**form here**](https://forms.office.com/r/MEUgDdqs7D) and we will contact you within 48 hours on further steps. 
+
 !!! note "Feedback"
 
 	With the intent of ATRM being a collaborative effort with the community, feedback is greatly appreciated. Is there a new or missing technique? Is the formatting off-putting? Please let me know [@haus3c](https://twitter.com/haus3c).
