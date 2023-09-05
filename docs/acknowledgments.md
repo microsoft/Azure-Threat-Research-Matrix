@@ -11,3 +11,4 @@ The Azure Threat Research Matrix is a collaborative effort with Microsoft and th
 * Nikhil Mittal [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/nikhil_mitt) 
 * [MITRE ATT&CK](https://attack.mitre.org/resources/terms-of-use/) - © 2021 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
 * [AlertIQ](https://alertiq.io/)
+* Craig Fretwell [:fontawesome-brands-twitter:{ .twitter }](https://twitter.com/CraigCloudITPro)
