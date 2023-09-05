@@ -102,18 +102,19 @@ nav:
                 - AZT605.1 - Storage Account Access Key Dumping: CredentialAccess/AZT605/AZT605-1.md
                 - AZT605.2 - Automation Account Credential Secret Dump: CredentialAccess/AZT605/AZT605-2.md
                 - AZT605.3 - Resource Group Deployment History Secret Dump: CredentialAccess/AZT605/AZT605-3.md
-        - Exfiltration:
-            - Exfiltration: Exfiltration/Exfiltration.md
+        - Impact:
+            - Impact: Impact/Impact.md
             - Techniques:
-                - AZT701 - SAS URI Generation: Exfiltration/AZT701/AZT701.md
-                - AZT701.1 - VM Disk SAS URI: Exfiltration/AZT701/AZT701-1.md
-                - AZT701.2 - Storage Account File Share SAS: Exfiltration/AZT701/AZT701-2.md
-                - AZT702 - File Share Mounting: Exfiltration/AZT702/AZT702-1.md
-                - AZT703 - Replication: Exfiltration/AZT703/AZT703-1.md
-                - AZT704 - Soft-Delete Recovery: Exfiltration/AZT704/AZT704.md
-                - AZT704.1 - Key Vault: Exfiltration/AZT704/AZT704-1.md   
-                - AZT704.2 - Storage Account Object: Exfiltration/AZT704/AZT704-2.md   
-                - AZT704.3 - Recovery Services Vault: Exfiltration/AZT704/AZT704-3.md            
+                - AZT701 - SAS URI Generation: Impact/AZT701/AZT701.md
+                - AZT701.1 - VM Disk SAS URI: Impact/AZT701/AZT701-1.md
+                - AZT701.2 - Storage Account File Share SAS: Impact/AZT701/AZT701-2.md
+                - AZT702 - File Share Mounting: Impact/AZT702/AZT702-1.md
+                - AZT703 - Replication: Impact/AZT703/AZT703-1.md
+                - AZT704 - Soft-Delete Recovery: Impact/AZT704/AZT704.md
+                - AZT704.1 - Key Vault: Impact/AZT704/AZT704-1.md   
+                - AZT704.2 - Storage Account Object: Impact/AZT704/AZT704-2.md   
+                - AZT704.3 - Recovery Services Vault: Impact/AZT704/AZT704-3.md
+                - AZT705 - Azure Backup Delete: Impact/AZT704/AZT704-3.md     
     - Acknowledgments: acknowledgments.md
     - About: about.md
 theme:
