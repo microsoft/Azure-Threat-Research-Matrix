@@ -1,4 +1,4 @@
-# Privilige Escalation
+# Privilege Escalation
 
 The adversary is trying to escalate their privileges within Azure Resources or Azure Active Directory.
 
